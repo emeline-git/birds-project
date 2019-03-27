@@ -11,14 +11,21 @@ birds = [
     {'common_name': 'Blue Tit', 'latin_name': 'Cyanistes caeruleus', 'size': 'very small', 'main_colour': 'yellow', 'secondary_colour_1': 'blue', 'secondary_colour_2': 'white'},
 ]
 
-app.run(debug=True)
+bird_colour = input('What is the main colour of the bird? ')
 
-colour = input('What is the main colour of the bird? ')
+#bird_colour_2 = input('What is an other of the bird? ')
 
-if colour == 'main_colour':
-    for bird in birds:
-        print(bird['common_name'])
-        print(bird['latin_name'])
-        print(bird['size'])
+#bird_colour_2 = input('What is an other of the bird? ')
 
-        (k for k,v in for_patient_type.iteritems() if v == 'Real')
+bird_size = input('What is the size of the bird? ')
+
+for bird in birds:
+   if (bird['size']) == bird_size and (bird['main_colour']) == bird_colour:
+         print(bird['common_name'])
+         print(bird['latin_name'])
+
+
+#for bird in birds:
+ #   if (bird['main_colour']) == bird_colour:
+  #       print(bird['common_name'])
+   #      print(bird['latin_name'])
