@@ -13,16 +13,22 @@ birds = [
 
 bird_colour = input('What is the main colour of the bird? ')
 
-#bird_colour_2 = input('What is an other of the bird? ')
+bird_colour_2 = input('What is another color of the bird? ')
 
-#bird_colour_2 = input('What is an other of the bird? ')
+#bird_colour_3 = input('What is an other color of the bird? ')
 
 bird_size = input('What is the size of the bird? ')
 
 for bird in birds:
-   if (bird['size']) == bird_size and (bird['main_colour']) == bird_colour:
-         print(bird['common_name'])
-         print(bird['latin_name'])
+    if (bird_size == bird['size'] or
+            bird_size == 'unknown') and \
+            (bird_colour == bird['main_colour'] or
+             bird_colour == 'unknown') and \
+            (bird_colour_2 == bird['secondary_colour_1'] or
+             bird_colour_2 == bird['secondary_colour_2'] or
+             bird_colour_2 == 'unknown'): #and bird_colour == (bird['main_colour']) or ('I do not know')
+        print(bird['common_name'])
+        #print(bird['latin_name'])
 
 
 #for bird in birds:
